@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, #app, .app-content {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  max-width: 99%;
+  height: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+#profile {
+  margin: 20px;
+  padding: 5vh 5vw;
+  max-width: 615px;
+}
+
+#profile-title {
+  font-weight: 700;
+  font-size: 3em;
+  margin: 20px 0px;
+  padding: 2vh 1vw 1vh 1vw;
+}
+
+#profile-subtitle {
+  font-weight: 300;
+  font-size: 2em;
+  margin: 20px 0px;
+  padding: 2vh 1vw 4vh 1vw;
+}
+
+#profile-content {
+  font-weight: 300;
+  font-size: 1.25em;
+  margin: 20px 0px;
+  padding: 2vh 1.25vw 4vh 1vw;
+  word-spacing: 4px;
+  line-height: 200%;
+}
+
+.profile-link {
+  border-bottom: solid 3px #D61A29;
+  cursor: pointer;
+  text-decoration: none;
+  color: initial;
+}
+
+.profile-link:hover {
+  background-color: #D61A29;
+  color: white;
+}
