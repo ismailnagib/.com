@@ -17,6 +17,7 @@ body {
   max-width: 99%;
   height: 100%;
   font-family: 'Roboto', sans-serif;
+  color: #121314;
 }
 
 #profile {
@@ -50,13 +51,24 @@ body {
 }
 
 .profile-link {
-  border-bottom: solid 3px #D61A29;
   cursor: pointer;
   text-decoration: none;
-  color: initial;
+  color: #121314;
+  position: relative;
+  margin: 0 0.05em;
 }
 
-.profile-link:hover {
-  background-color: #D61A29;
-  color: white;
+.profile-link::after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: -0.1em;
+  right: -0.1em;
+  bottom: -0.1em;
+  background-color: rgba(214, 26, 41, 0.5);
+}
+
+.profile-link:hover:after {
+  top: 0;
 }
